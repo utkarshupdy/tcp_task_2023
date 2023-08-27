@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEXCAST - Introduction</title>
+    <style>
+        body {
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00ff408a;
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #7fbd0b82;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #2D2D2D;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            padding: 20px;
+            position: relative;
+        }
+
+        img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 30%;
+            box-shadow: 5px 5px 10px rgba(221, 7, 7, 0.401);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .square-img {
+            border-radius: 4px;
+        }
+
+        .search-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 2px solid #FFFFFF;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: #FFFFFF;
+        }
+
+        .go-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #da2424c6;
+            color: #FFFFFF;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @page {
+            size: A4;
+            margin: 5;
+        }
+
+        @media print {
+            body {
+                margin: 1cm;
+            }
+        }
+
+        /* Hide content initially */
+        .content {
+            display: none;
+        }
+
+        /* Zoom-out animation */
+        @keyframes zoomOut {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        .display-message {
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+            animation: zoomOut 15s ease-in-out forwards;
+        }
+
+        .enter-button {
+            background-color: #00ff408a;
+            color: #FFFFFF;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            /* Adjust styles for mobile here */
+            img {
+                max-width: 100%;
+            }
+        }
+
+        /* Additional styles for text animation */
+        .text-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .text-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="display-message">
+        <img src="img.jpg" alt="Welcome Image">
+        <br>
+        WELCOME TO MY WEBSITE<br>
+        THIS WEBSITE IS CREATED BY UTKARSH KUMAR UPADHYAY<br>
+        READY FOR THE ADVENTURE <br>
+        <button class="enter-button" onclick="enterWebsite()">ENTER</button>
+    </div>
+    <div class="content">
+        <!-- Remaining sections here -->
+        <nav>
+            <a href="#intro">Home</a>
+            <a href="#web-dev-intro">Introduction to Web Development</a>
+            <a href="#web-dev-careers">Careers in Web Development</a>
+            <a href="#about-contact">About Me & Contact</a>
+        </nav>
+
+        <section id="intro">
+            <h1>NEXCAST - Introduction TO HTML/CSS/JS</h1>
+            <nav>
+                <a href="#intro">Home</a>
+                <a href="#web-dev-intro">Introduction to Web Development</a>
+                <a href="#web-dev-careers">Careers in Web Development</a>
+                <a href="#about-contact">About Me & Contact</a>
+                
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">Linkedin</a>
+                
+                <a href="https://github.com/your-github-profile" target="_blank">Github</a>
+            </nav>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaG5vbG9neXx8fHx8fDE2OTEwOTQ0ODk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+                alt="Technology">
+            <img src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=8aae34cf35df31a592f0bef16e6342ef"
+                alt="web d promt" class="square-img">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <h2 style="color: #FFA500;">Introduction to Web Development</h2>
+            <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an
+                intranet (a private network). Web development can range from developing a simple single static page of
+                plain text to complex web applications, electronic businesses, and social network services. A more
+                comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web
+                design, Web content development, client liaison, client-side/server-side scripting, Web server and
+                network security configuration, and e-commerce development.</p>
+            <img src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29kZXx8fHx8fDE2OTEwOTQxMjk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+                alt="Web Development Image 1">
+            <p class="page-number">Page 1 of 4</p>
+        </section>
+
+        <section id="web-dev-intro">
+            <h1 style="color: #FFA500;">Web Development Introduction</h1>
+            <nav>
+                <a href="#intro">Home</a>
+                <a href="#web-dev-intro">Introduction to Web Development</a>
+                <a href="#web-dev-careers">Careers in Web Development</a>
+                <a href="#about-contact">About Me & Contact</a>
+            </nav>
+            <input type="text" class="search-bar" placeholder="Search...">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8aHRtbHx8fHx8fDE2OTEwOTQyMzY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+                alt="WEB DEVELOPMENT 2" class="square-img">
+            <p>1->Web development is the process of building and maintaining websites and web applications that are
+                accessible through the internet.</p>
+            <p>2->It involves a combination of programming, design, and markup languages to create interactive and
+                user-friendly online experiences.</p>
+            <p>3->Web development is broadly categorized into two main areas: Front-end development and Back-end
+                development.</p>
+            <p>4->Front-end development focuses on the user interface and user experience, dealing with the visual
+                aspects of a website, such as layout, colors, and responsiveness.</p>
+            <p>5->Back-end development involves server-side operations, database management, and handling the logic
+                behind web applications.</p>
+            <p class="page-number">Page 2 of 4</p>
+        </section>
+
+        <section id="web-dev-careers">
+            <h1 style="color: #FFA500;">Careers in Web Development</h1>
+            <nav>
+                <a href="#intro">Home</a>
+                <a href="#web-dev-intro">Introduction to Web Development</a>
+                <a href="#web-dev-careers">Careers in Web Development</a>
+                <a href="#about-contact">About Me & Contact</a>
+            </nav>
+            <input type="text" class="search-bar" placeholder="Search...">
+            <img src="img.jpg"
+                alt="Carriers in web development" class="square-img">
+            <p>1->Front-End Developer</p>
+            <p>2->Back-End Developer</p>
+            <p>3->Full-Stack Developer</p>
+            <p>4->Web Designer</p>
+            <p>5->User Experience (UX) Designer</p>
+            <p class="page-number">Page 3 of 4</p>
+        </section>
+
+        <section id="about-contact">
+            <h1 style="color: #FFA500;">About Me & Contact</h1>
+            <nav>
+                <a href="#intro">Home</a>
+                <a href="#web-dev-intro">Introduction to Web Development</a>
+                <a href="#web-dev-careers">Careers in Web Development</a>
+                <a href="#about-contact">About Me & Contact</a>
+            </nav>
+            <input type="text" class="search-bar" placeholder="Search...">
+            <h2>About Me</h2>
+            <textarea rows="1" cols="80" placeholder="CREATED BY: UTKARSH KUMAR UPADHYAY"></textarea>
+
+            <h2>Contact Me</h2>
+            <p>Email: utkarsh.upliftyourskills@gmail.com</p>
+            <address>
+                CONTACT no: 7309466387
+            </address>
+            <address>
+                DM ME FOR COLLABRATION 😅😅
+            </address>
+            <p class="page-number">Page 4 of 4</p>
+            <div class="go-to-top" onclick="goToTop()">Go to Top</div>
+        </section>
+    </div>
+
+    <script>
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                document.querySelector('.go-to-top').style.display = 'block';
+            } else {
+                document.querySelector('.go-to-top').style.display = 'none';
+            }
+        });
+
+        // Text animation
+        const textElements = document.querySelectorAll('.text-animation');
+        textElements.forEach((element) => {
+            element.classList.add('text-visible');
+        });
+
+        // Enter the website
+        function enterWebsite() {
+            document.querySelector('.display-message').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        }
+
+        // Wait for the page to load
+        window.addEventListener('load', function () {
+            // Hide the display message after animation
+            setTimeout(function () {
+                document.querySelector('.display-message').style.display = 'none';
+                document.querySelector('.content').style.display = 'block';
+            }, 15000); // 15000 milliseconds (15 seconds)
+        });
+    </script>
+</body>
+
+</html>
